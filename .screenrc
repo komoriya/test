@@ -1,0 +1,11 @@
+escape ^Tt
+termcap kterm hs@
+terminfo kterm hs@
+vbell off
+bind w windowlist -b
+#hardstatus alwayslastline I%wI
+hardstatus alwayslastline "%{= Wb}[%m/%d %02c]%016=%{= WK}%-w%50>%{= bW}%n %t%{-}%+w%-0< %="
+defhstatus I^En:^EtI
+shell -$SHELL
+startup_message off
+autodetach on
